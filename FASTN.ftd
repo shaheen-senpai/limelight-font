@@ -1,0 +1,25 @@
+-- import: fastn
+
+-- fastn.package: <user_name>.github.io/<repo_name>
+
+-- fastn.dependency: fastn-community.github.io/site-doc
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/footer
+
+-- fastn.auto-import: fastn-community.github.io/site-doc
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
+
+
+
+
+
+-- fastn.sitemap:
+
+
+# Home: index.html
+
+- Custom Font: custom/
+
+# GitHub 
+  url: https://github.com/<user_name>/<repo_name>
+

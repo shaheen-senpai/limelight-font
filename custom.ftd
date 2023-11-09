@@ -1,0 +1,276 @@
+-- import: <user_name>.github.io/<repo_name>/assets as <repo_name>-assets
+
+;; ⚠️fastn-builders::⚠️ before using this file please find and replace <font-name>
+;; with font name you have given inside 
+;; `<user_name>.github.io/<repo_name>/FASTN.ftd file
+
+
+
+
+
+
+-- site-doc.doc-home: FTD <repo_name> package
+site-title: `<repo_name>`
+show-tabs: false
+github-url: <user_name>.github.io/<repo_name>
+current-package: <user_name>.github.io/<repo_name>
+
+This FTD font `<repo_name>` package is for your ftd web projects. To Use this
+<repo_name> inside `FTD` project follow below instructions.
+
+-- site-doc.header: How to use <repo_name>?
+
+-- cb.code: Add this to your FASTN.ftd
+lang: ftd
+
+\-- fastn.dependency: <user_name>.github.io/<repo_name>
+
+-- site-doc.header: Next step:
+
+After adding <repo_name> dependency inside your `FASTN.ftd` file, You need to
+add <repo_name> assets and import it inside your `.ftd` files where you are
+using this font for your custom font types. 
+
+To include <repo_name> into your `ftd` file follow below instructions.
+
+-- cb.code:
+lang: ftd
+
+\-- import: <user_name>.github.io/<repo_name>/assets as <repo_name>-assets
+
+-- site-doc.header: How to create a custom <repo_name> type? 
+
+We don't recommend creating custom types. We recommend to use 
+our [<repo_name>-typography](https://<user_name>.github.io/<repo_name>-typography)
+
+If you're using [<repo_name>-typography](https://<user_name>.github.io/<repo_name>-typography) 
+and still your designer has introduced new font size which are not included or 
+part of our [<repo_name>-typography](https://<user_name>.github.io/<repo_name>-typography) 
+then only define custom types. 
+
+We hope you shouldn't need to define a custom type.
+
+Below is an example of creating a custom `ftd.type` using <repo_name>.
+
+/-- cb.rendered: Demo:
+
+-- cb.rendered.input:
+
+\-- ftd.type <repo_name>-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+\-- ftd.type <repo_name>-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+\-- ftd.responsive-type <repo_name>-size-12-400:
+desktop: $<repo_name>-size-12-desktop
+mobile: $<repo_name>-size-12-mobile
+
+\-- ftd.text: 
+role: $<repo_name>-size-12-400
+color: $inherited.colors.text-strong
+
+`font-size: 12px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- cb.rendered.output:
+
+-- site-doc.output:
+colors: $ftd.default-colors
+
+-- ftd.text: 
+role: $<repo_name>-size-12-400
+color: $inherited.colors.text-strong
+
+`font-size: 12px, font-weight: 400` 
+
+👉 The quick brown fox jumps over the lazy dog 
+
+-- end: site-doc.output
+
+-- end: cb.rendered.output
+
+-- end: cb.rendered
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+
+
+
+-- ftd.type <repo_name>-size-12-desktop:
+size.px: 12
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-12-mobile:
+size.px: 12
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-12-400:
+desktop: $<repo_name>-size-12-desktop
+mobile: $<repo_name>-size-12-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-12-500-desktop:
+size.px: 12
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-12-500-mobile:
+size.px: 12
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-12-500:
+desktop: $<repo_name>-size-12-500-desktop
+mobile: $<repo_name>-size-12-500-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-12-800-desktop:
+size.px: 12
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-12-800-mobile:
+size.px: 12
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-12-800:
+desktop: $<repo_name>-size-12-800-desktop
+mobile: $<repo_name>-size-12-800-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-18-desktop:
+size.px: 18
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-18-mobile:
+size.px: 18
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-18-400:
+desktop: $<repo_name>-size-18-desktop
+mobile: $<repo_name>-size-18-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-18-500-desktop:
+size.px: 18
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-18-500-mobile:
+size.px: 18
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-18-500:
+desktop: $<repo_name>-size-18-500-desktop
+mobile: $<repo_name>-size-18-500-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-18-800-desktop:
+size.px: 18
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-18-800-mobile:
+size.px: 18
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-18-800:
+desktop: $<repo_name>-size-18-800-desktop
+mobile: $<repo_name>-size-18-800-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-48-desktop:
+size.px: 48
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-48-mobile:
+size.px: 48
+weight: 400
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-48-400:
+desktop: $<repo_name>-size-48-desktop
+mobile: $<repo_name>-size-48-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-48-500-desktop:
+size.px: 48
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-48-500-mobile:
+size.px: 48
+weight: 500
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-48-500:
+desktop: $<repo_name>-size-48-500-desktop
+mobile: $<repo_name>-size-48-500-mobile
+
+
+
+
+
+-- ftd.type <repo_name>-size-48-800-desktop:
+size.px: 48
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+
+-- ftd.type <repo_name>-size-48-800-mobile:
+size.px: 48
+weight: 800
+font-family: $<repo_name>-assets.fonts.<font-name>
+
+-- ftd.responsive-type <repo_name>-size-48-800:
+desktop: $<repo_name>-size-48-800-desktop
+mobile: $<repo_name>-size-48-800-mobile
